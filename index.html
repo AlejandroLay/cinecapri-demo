@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Cine Capri · El Prat de Llobregat</title>
+  <meta name="description" content="Cartellera i horaris del Cine Capri, el cine del Prat de Llobregat des de 1967.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Zilla+Slab:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#cartellera">Vés a la cartellera</a>
+
+  <p class="demo-banner">Demostració de la web nova del Cine Capri. Alguns horaris i preus són d'exemple.</p>
+
+  <div id="avis" class="notice" hidden></div>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img class="brand-logo" src="img/logo-capri.gif" alt="" width="60" height="240">
+        <span class="brand-text">
+          <span class="brand-name">Cine Capri</span>
+          <span class="brand-sub">El Prat de Llobregat · des de 1967</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Menú principal">
+        <a href="#cartellera">Cartellera</a>
+        <a href="#preus">Preus</a>
+        <a href="#on-som">On som</a>
+        <a href="historia.html">Història</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="cartellera">
+    <section class="wrap section">
+      <h2 class="section-title" id="titol-destacat">Aquesta setmana</h2>
+      <div id="destacat"></div>
+    </section>
+
+    <section class="wrap section" id="properament-sec">
+      <h2 class="section-title">Properament</h2>
+      <div id="properament"></div>
+    </section>
+
+    <section class="wrap section" id="pendents-sec" hidden>
+      <h2 class="section-title small">Pendents de confirmar data</h2>
+      <ul id="pendents" class="pending-list"></ul>
+    </section>
+
+    <div class="band">
+      <section class="wrap section two-col" id="preus">
+        <div>
+          <h2 class="section-title">Preus</h2>
+          <table class="prices" id="taula-preus"></table>
+          <p class="note" id="nota-preus" hidden></p>
+        </div>
+        <div>
+          <h2 class="section-title">Entrades</h2>
+          <p id="taquilla"></p>
+          <p>Per a qualsevol dubte, truqueu-nos al <a class="tel" id="tel-link" href="tel:+34933795943">93 379 59 43</a>.</p>
+        </div>
+      </section>
+    </div>
+
+    <section class="wrap section two-col" id="on-som">
+      <div>
+        <h2 class="section-title">On som</h2>
+        <address>
+          <strong>Cine Capri</strong><br>
+          <span id="adreca">Avinguda Verge de Montserrat, 111</span><br>
+          <span id="ciutat">08820 El Prat de Llobregat</span>
+        </address>
+        <p><a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Cine+Capri+Avinguda+Verge+de+Montserrat+111+El+Prat+de+Llobregat">Com arribar-hi</a></p>
+      </div>
+      <div class="map">
+        <iframe title="Mapa del Cine Capri" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=Avinguda%20Verge%20de%20Montserrat%20111%2C%20El%20Prat%20de%20Llobregat&z=16&output=embed"></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>
+        <p class="footer-name">Cine Capri</p>
+        <p id="peu-adreca">Avinguda Verge de Montserrat, 111 · 08820 El Prat de Llobregat</p>
+        <p>Telèfon <a id="peu-tel" href="tel:+34933795943">93 379 59 43</a></p>
+      </div>
+      <div class="footer-links">
+        <a id="s-ig" href="#" target="_blank" rel="noopener">Instagram</a>
+        <a id="s-fb" href="#" target="_blank" rel="noopener">Facebook</a>
+        <a id="s-x" href="#" target="_blank" rel="noopener">X (Twitter)</a>
+        <a class="admin-link" href="admin.html">Administració</a>
+      </div>
+    </div>
+  </footer>
+
+  <dialog id="fitxa" class="sheet" aria-labelledby="fitxa-titol">
+    <div id="fitxa-cos"></div>
+  </dialog>
+
+  <script src="js/store.js"></script>
+  <script src="js/site.js"></script>
+</body>
+</html>
